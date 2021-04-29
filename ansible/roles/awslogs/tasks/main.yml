@@ -14,7 +14,7 @@
 
 - name: configure awslogs to collect {{ file }} 
   ini_file: 
-    path: "/etc/awslogs/config/{{ name }}.conf" 
+    path: "/etc/awslogs/config/helloworld.conf" 
     section: "{{ file }}" 
     option: "{{ item.option }}" 
     value: "{{ item.value }}"  
